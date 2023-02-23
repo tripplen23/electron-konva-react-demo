@@ -8,5 +8,11 @@ npm install
 npm run wacth
 npm start
 ```
+3. Package this binary: 
+```
+npm install --save-dev @electron-forge/cli
+npm exec --package=@electron-forge/cli -c "electron-forge import"
+npm run make
+```
 
 Happy coding!
