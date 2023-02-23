@@ -3,11 +3,26 @@
   <head>
     <meta charset="UTF-8">
     <title>Konva JS Electron App</title>
+    <link rel="stylesheet" type="text/css" href="./src/style/styles.css">
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
   </head>
   <body>
+    
+    <button id="toggle-dark-mode">Dark Mode</button>
+    <button id="reset-to-system">Light Mode</button>
     <div id="root"></div>
     <!--<script src="./node_modules/konva/konva.js"></script>-->
   </body>
   <script src="./build/js/app.js"></script>
+  <script>
+    document.getElementById('toggle-dark-mode').addEventListener('click', async () => {
+      const isDarkMode = await window.darkMode.toggle()
+      document.getElementById('theme-source').innerHTML = isDarkMode ? 'Dark' : 'Light'
+    })
+
+    document.getElementById('reset-to-system').addEventListener('click', async () => {
+      await window.darkMode.system()
+      document.getElementById('theme-source').innerHTML = 'System'
+    })
+  </script>
   </html>

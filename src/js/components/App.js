@@ -6,6 +6,8 @@ import RegionsList from "./RegionsList"
 import Canvas from "./Canvas"
 
 export default function App() {
+
+
   const { setBrightness } = useBenStore();
 
   return (
@@ -31,11 +33,10 @@ export default function App() {
           <RegionsList/>
         </div>
 
-      {/* Right Panel */}
-      <div className='right-panel'>
-        <Canvas />
-      </div>
-
+        {/* Right Panel */}
+        <div className='right-panel'>
+          <Canvas />
+        </div>
       </div>
     </React.Fragment>
   )

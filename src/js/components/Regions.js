@@ -1,14 +1,14 @@
 import React from "react";
 import { Layer, Line } from "react-konva";
 
-import useStore from "../store";
+import useBenStore from "../store";
 
 export default () => {
-  const regions = useStore(s => s.regions);
+  const regions = useBenStore(s => s.regions);
   const layerRef = React.useRef(null);
 
-  const selectedId = useStore(s => s.selectedRigionId);
-  const selectRegion = useStore(s => s.selectRegion);
+  const selectedId = useBenStore(s => s.selectedRigionId);
+  const selectRegion = useBenStore(s => s.selectRegion);
 
   return (
     <Layer ref={layerRef}>

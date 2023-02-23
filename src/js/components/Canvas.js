@@ -5,7 +5,7 @@ import { Stage } from 'react-konva';
 import Regions from './Regions';
 import BaseImage from './BaseImage';
 
-import useStore from '../store';
+import useBenStore from '../store';
 
 let id = 1;
 
@@ -71,19 +71,19 @@ function limitAttributes(stage, newAttrs) {
 
 export default () => {
   const stageRef = React.useRef();
-  const { width, height } = useStore((s) => ({
+  const { width, height } = useBenStore((s) => ({
     width: s.width,
     height: s.height,
   }));
-  const setSize = useStore((s) => s.setSize);
-  const scale = useStore((state) => state.scale);
-  const isDrawing = useStore((state) => state.isDrawing);
-  const toggleDrawing = useStore((state) => state.toggleIsDrawing);
+  const setSize = useBenStore((s) => s.setSize);
+  const scale = useBenStore((state) => state.scale);
+  const isDrawing = useBenStore((state) => state.isDrawing);
+  const toggleDrawing = useBenStore((state) => state.toggleIsDrawing);
 
-  const regions = useStore((state) => state.regions);
-  const setRegions = useStore((state) => state.setRegions);
+  const regions = useBenStore((state) => state.regions);
+  const setRegions = useBenStore((state) => state.setRegions);
 
-  const selectRegion = useStore((s) => s.selectRegion);
+  const selectRegion = useBenStore((s) => s.selectRegion);
 
   React.useEffect(() => {
     function checkSize() {

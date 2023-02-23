@@ -2,7 +2,7 @@ import React from "react";
 import { SortableContainer, SortableElement } from "react-sortable-hoc";
 import * as arrayMove from 'array-move';
 
-import useStore from "../store";
+import useBenStore from "../store";
 
 const SortableItem = SortableElement(({ region, sortIndex, onRemove }) => {
   return (
@@ -42,8 +42,8 @@ const SortableList = SortableContainer(({ items, onRemove }) => {
 });
 
 export default () => {
-  const regions = useStore(s => s.regions);
-  const setRegions = useStore(s => s.setRegions);
+  const regions = useBenStore(s => s.regions);
+  const setRegions = useBenStore(s => s.setRegions);
 
   return (
     <SortableList
