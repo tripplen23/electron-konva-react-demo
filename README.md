@@ -4,7 +4,7 @@ Hello this is the reading-object app
 ![image](https://user-images.githubusercontent.com/114677249/221088673-8ec5b808-d2b2-457e-bac3-19d21eaa8ee0.png)
 
 1. Clone this repo
-2. run by the following command: 
+2. Run by the following command: 
 ```
 npm install
 npm run wacth
@@ -17,4 +17,4 @@ npm exec --package=@electron-forge/cli -c "electron-forge import"
 npm run make
 ```
 
-Happy coding!
+Happy coding <3
