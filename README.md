@@ -1,6 +1,8 @@
 # electron-konva-react-demo
 Hello this is the reading-object app
 
+![image](https://user-images.githubusercontent.com/114677249/221088673-8ec5b808-d2b2-457e-bac3-19d21eaa8ee0.png)
+
 1. Clone this repo
 2. run by the following command: 
 ```
