@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
+
 
 import useBenStore from "../store";
 
 import RegionsList from "./RegionsList"
 import Canvas from "./Canvas"
+import DarkToggle from "./DarkToggle"
 
 export default function App() {
-
 
   const { setBrightness } = useBenStore();
 
   return (
     <React.Fragment>
+      <DarkToggle />
       <h2>App chú thích hình ảnh</h2>
       <p className='description'>Hãy vẽ khoanh vùng 1 đối tượng</p>
       <div className ="App">

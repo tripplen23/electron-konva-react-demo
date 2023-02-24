@@ -24,6 +24,7 @@
     "electron-reload": "^2.0.0-alpha.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
     "react-konva": "^18.2.5",
     "react-sortable-hoc": "https://pkg.csb.dev/clauderic/react-sortable-hoc/commit/f28d4ac3/react-sortable-hoc",
     "sass": "^1.58.3",

@@ -2,7 +2,7 @@ import React from "react";
 import { Image, Layer } from "react-konva";
 import useImage from "use-image";
 
-import useStore from "../store";
+import useBenStore from "../store";
 
 const IMAGE_NUMBER = 1 + Math.round(Math.random() * 5);
 const IMAGE_URL = `image-${IMAGE_NUMBER}.jpg`;
@@ -10,13 +10,13 @@ const IMAGE_URL = `image-${IMAGE_NUMBER}.jpg`;
 export default () => {
   const [image] = useImage(IMAGE_URL, "Anonymous");
 
-  const setImageSize = useStore(state => state.setImageSize);
-  const setScale = useStore(state => state.setScale);
-  const setSize = useStore(state => state.setSize);
-  const width = useStore(state => state.width);
-  const height = useStore(state => state.height);
+  const setImageSize = useBenStore(state => state.setImageSize);
+  const setScale = useBenStore(state => state.setScale);
+  const setSize = useBenStore(state => state.setSize);
+  const width = useBenStore(state => state.width);
+  const height = useBenStore(state => state.height);
 
-  const { brightness } = useStore();
+  const { brightness } = useBenStore();
 
   React.useEffect(() => {
     if (!image) {

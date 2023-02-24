@@ -1,0 +1,23 @@
+.dark-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dark-toggle-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #555;
+    margin-right: 8px;
+  }
+  
+  .dark-toggle-button:focus {
+    outline: none;
+  }
+  
+  .dark-toggle-button:hover {
+    color: #000;
+  }
