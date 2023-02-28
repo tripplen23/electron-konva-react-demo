@@ -7,7 +7,7 @@ Hello this is the reading-object app
 2. Run by the following command: 
 ```
 npm install
-npm run wacth
+npm run watch
 npm start
 ```
 3. Package this binary: 
