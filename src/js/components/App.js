@@ -1,5 +1,4 @@
-import React, { useState, useCallback } from 'react';
-
+import React from 'react';
 
 import useBenStore from "../store";
 
@@ -16,6 +15,8 @@ export default function App() {
       <DarkToggle />
       <h2>App chú thích hình ảnh</h2>
       <p className='description'>Hãy vẽ khoanh vùng 1 đối tượng</p>
+      <p className='description'>Hướng dẫn: Kéo chuột xuống từ điểm bạn chọn để khoanh vùng đối tượng</p>
+
       <div className ="App">
 
         {/* Left Panel */}

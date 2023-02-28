@@ -25,10 +25,21 @@ h2 {
     display:flex;
 }
 
-input {
+#slider {
     transform: translateY(3px);
-    width: 100px;
+    width: 150px;
+    height: 15px;
     margin-left: 10px;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 15px;
+    background-color: #A3CD99;
+    border: 1px solid darken(#A3CD99, 4%);
+    border-radius: 10px;
+    margin: auto;
+    transition: all 0.3s ease;
 }
 
 .left-panel {
@@ -37,16 +48,18 @@ input {
 }
 
 .regions-list {
+    margin-top: 1rem;
 }
 
 .region{
     padding: 5px;
     margin: 5px;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 0 0 3px grey;
 }
 
 .region button {
+    cursor: pointer;
     float: right;
 }
 
@@ -69,8 +82,8 @@ input {
 
 @media (prefers-color-scheme: dark) {
     body { background: #333; color: white; }
-  }
+}
   
-  @media (prefers-color-scheme: light) {
-    body { background: #ddd; color: black; }
-  }
+@media (prefers-color-scheme: light) {
+    body { background: #f8f8f8; color: black; }
+}

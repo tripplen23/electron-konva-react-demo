@@ -22,8 +22,6 @@ const DarkToggle = () => {
       <button className='dark-toggle-button' onClick={toggleDarkMode}>
         {isDarkMode ? <FiSun /> : <FiMoon />}
       </button>
-
-      
     </div>
   )
 }
